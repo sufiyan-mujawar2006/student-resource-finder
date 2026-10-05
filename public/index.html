@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Student Resource Finder</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header>
+    <div class="logo">Student Resource Finder</div>
+
+    <nav>
+        <a href="/">Home</a>
+        <a href="saved.html">Saved Resources</a>
+    </nav>
+</header>
+
+<main>
+
+<section class="hero">
+
+    <h1>Find the Right Learning Resources</h1>
+
+    <p>
+        Search any technology or topic and discover tutorials,
+        documentation, GitHub projects, videos, courses and practice resources.
+    </p>
+
+    <form id="searchForm">
+
+        <div class="search-box">
+
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Example: MongoDB, Java, Python..."
+                required
+            >
+
+            <select id="category">
+
+                <option value="All">All Resources</option>
+                <option value="Tutorials">Tutorials</option>
+                <option value="Documentation">Documentation</option>
+                <option value="GitHub">GitHub</option>
+                <option value="Videos">Videos</option>
+                <option value="Courses">Courses</option>
+                <option value="Practice">Practice</option>
+
+            </select>
+
+            <button type="submit">
+                Search
+            </button>
+
+        </div>
+
+    </form>
+
+    <div id="loading"></div>
+
+</section>
+
+<section class="features">
+
+    <div class="feature">
+        <h3>🔎 Smart Search</h3>
+        <p>Search the web using SerpApi.</p>
+    </div>
+
+    <div class="feature">
+        <h3>📚 Organized Resources</h3>
+        <p>Resources are grouped into useful categories.</p>
+    </div>
+
+    <div class="feature">
+        <h3>🧠 Learning Path</h3>
+        <p>Follow a simple path from beginner to advanced.</p>
+    </div>
+
+    <div class="feature">
+        <h3>💾 Save Resources</h3>
+        <p>Save useful resources for later.</p>
+    </div>
+
+</section>
+
+<section class="history-section">
+
+    <h2>Recent Searches</h2>
+
+    <div id="history"></div>
+
+</section>
+
+</main>
+
+<script src="js/index.js"></script>
+
+</body>
+</html>

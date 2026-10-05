@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Search Results</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+<header>
+
+    <div class="logo">
+        Student Resource Finder
+    </div>
+
+    <nav>
+        <a href="/">Home</a>
+        <a href="saved.html">Saved Resources</a>
+    </nav>
+
+</header>
+
+<main>
+
+<section class="results-header">
+
+    <h1 id="searchTitle">
+        Search Results
+    </h1>
+
+    <p id="resultCount"></p>
+
+</section>
+
+<section class="category-buttons">
+
+    <button data-category="All">All</button>
+    <button data-category="Tutorials">Tutorials</button>
+    <button data-category="Documentation">Documentation</button>
+    <button data-category="GitHub">GitHub</button>
+    <button data-category="Videos">Videos</button>
+    <button data-category="Courses">Courses</button>
+    <button data-category="Practice">Practice</button>
+
+</section>
+
+<section class="learning-path">
+
+    <h2>🧠 Recommended Learning Path</h2>
+
+    <div id="learningPath"></div>
+
+</section>
+
+<section>
+
+    <div id="results"></div>
+
+</section>
+
+</main>
+
+<script src="js/results.js"></script>
+
+</body>
+
+</html>
